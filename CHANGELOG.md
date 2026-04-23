@@ -9,6 +9,15 @@ releases on the same day.
 
 ## [Unreleased]
 
+## [2026.04.23.3]
+
+### Fixed
+- `plugins[0].source` in `marketplace.json` now uses the full relative
+  path `./plugins/newton` instead of the bare `newton` shorthand.
+  Claude Code's schema validator rejected the shorthand form with
+  `plugins.0.source: Invalid input`, blocking `/plugin marketplace add`.
+  Dropped the unused `metadata.pluginRoot` shorthand at the same time.
+
 ## [2026.04.23.2]
 
 ### Changed
