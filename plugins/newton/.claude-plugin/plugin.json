@@ -1,0 +1,14 @@
+{
+  "name": "newton",
+  "version": "2026.04.23.1",
+  "description": "Aghanim integration for Claude Code: search Aghanim docs and the Aghanim public API via the Newton MCP server.",
+  "author": {
+    "name": "Aghanim",
+    "email": "contact@aghanim.com",
+    "url": "https://aghanim.com"
+  },
+  "homepage": "https://aghanim.com",
+  "repository": "https://github.com/aghanim-dev/claude-plugins",
+  "license": "AGPL-3.0-or-later",
+  "keywords": ["aghanim", "newton", "docs", "api", "mcp"]
+}

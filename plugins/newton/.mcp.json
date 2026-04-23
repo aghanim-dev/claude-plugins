@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "aghanim": {
+      "type": "sse",
+      "url": "https://newton.aghanim.com/sse"
+    }
+  }
+}
