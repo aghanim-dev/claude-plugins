@@ -9,6 +9,21 @@ releases on the same day.
 
 ## [Unreleased]
 
+## [2026.04.24.0]
+
+### Added
+- `/aghanim-webhooks-quick-start` slash command in the `newton`
+  plugin that invokes the `aghanim-webhooks-quick-start` skill.
+- Quick-start section in the marketplace README covering
+  marketplace registration, `newton` plugin install, and running
+  `/aghanim-webhooks-quick-start`.
+
+### Fixed
+- `newton` plugin MCP server URL corrected from
+  `https://newton.aghanim.com/sse` to `https://mcp.aghanim.dev/sse`.
+  The previous host was wrong, so `/plugin install newton@aghanim`
+  users could not reach the Newton MCP server.
+
 ## [2026.04.23.3]
 
 ### Fixed

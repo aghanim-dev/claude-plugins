@@ -2,7 +2,7 @@
   "mcpServers": {
     "aghanim": {
       "type": "sse",
-      "url": "https://newton.aghanim.com/sse"
+      "url": "https://mcp.aghanim.dev/sse"
     }
   }
 }
