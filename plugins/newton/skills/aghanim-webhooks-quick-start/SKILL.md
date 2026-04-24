@@ -14,21 +14,21 @@ description: >-
 
 # Aghanim Webhooks Quick Start
 
-Walks Claude through a fresh Aghanim webhook integration in the project
-the user is currently working on. The skill is stack-agnostic — it adapts
-to whichever language and framework the project already uses.
+Walks the assistant through a fresh Aghanim webhook integration in the
+project the user is currently working on. The skill is stack-agnostic —
+it adapts to whichever language and framework the project already uses.
 
 **Requires:** the `aghanim` Claude Code plugin (ships with this skill),
 which provides the Newton MCP server (`mcp__aghanim__*`). All Aghanim doc
-and API lookups must go through that server — anonymous `WebFetch` against
-`docs.aghanim.com` returns 403.
+and API lookups must go through that server — anonymous requests against
+`docs.aghanim.com` return 403.
 
 ---
 
 ## First-time tool call
 
 The first `mcp__aghanim__*` call triggers an Auth0 browser login. Finish it
-and return to Claude Code — the session persists.
+and return to your editor — the session persists.
 
 ---
 
@@ -43,8 +43,8 @@ and return to Claude Code — the session persists.
    top hit that covers request shape, response shape, signing, idempotency,
    or retry semantics.
 
-Do **not** fall back to `WebFetch` — `docs.aghanim.com` rejects anonymous
-requests.
+Do **not** fetch `docs.aghanim.com` anonymously — it returns 403. Use
+`mcp__aghanim__fetch_doc`.
 
 ### Step 2 — Pull the machine-readable schemas
 
@@ -84,8 +84,8 @@ guess when you can check.
 
 ### Step 4 — Ask the user to fill the gaps
 
-Anything you could not resolve from the code, ask via `AskUserQuestion`.
-**Do not proceed past this step with open gaps.** Typical questions:
+Anything you could not resolve from the code, ask the user. **Do not
+proceed past this step with open gaps.** Typical questions:
 
 - Which route path and router file should host the Aghanim webhook
   endpoint?
@@ -151,7 +151,7 @@ Use the project's existing test framework and fixture patterns.
 | Situation | Behaviour |
 |-----------|-----------|
 | Newton MCP is not authenticated yet | First `mcp__aghanim__*` call triggers Auth0 SSO; wait for the user to finish login. |
-| Tempted to use `WebFetch` on `docs.aghanim.com` | Don't — the host returns 403 for anonymous requests. Use `mcp__aghanim__fetch_doc`. |
+| Tempted to fetch `docs.aghanim.com` directly | Don't — the host returns 403 for anonymous requests. Use `mcp__aghanim__fetch_doc`. |
 | Target project has no web framework | Stop and ask the user how they plan to expose HTTP endpoints before writing any code. |
 | No player or inventory model in the project | Stop and ask whether to create them now or stub the lookups. |
 | Aghanim docs schema contradicts an earlier assumption | Trust the docs. Update the implementation and flag the drift to the user. |

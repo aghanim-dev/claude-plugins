@@ -9,6 +9,14 @@ releases on the same day.
 
 ## [Unreleased]
 
+## [2026.04.24.2]
+
+### Changed
+- Reworded the `aghanim-webhooks-quick-start` skill and the plugin README
+  to editor-neutral phrasing (e.g. "the assistant" instead of "Claude",
+  "your editor" instead of "Claude Code") so the same text can be shared
+  with the Cursor variant. No behavioral change.
+
 ## [2026.04.24.1]
 
 ### Changed
