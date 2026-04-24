@@ -9,6 +9,14 @@ releases on the same day.
 
 ## [Unreleased]
 
+## [2026.04.24.1]
+
+### Changed
+- Marketplace README quick-start now includes `/reload-plugins` between
+  `/plugin install newton@aghanim` and `/newton:aghanim-webhooks-quick-start`,
+  and uses the namespaced command form so the workflow runs correctly
+  on first install.
+
 ## [2026.04.24.0]
 
 ### Added

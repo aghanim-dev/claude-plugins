@@ -10,15 +10,17 @@ From inside Claude Code, run:
 ```text
 /plugin marketplace add aghanim-dev/claude-plugins
 /plugin install newton@aghanim
-/aghanim-webhooks-quick-start
+/reload-plugins
+/newton:aghanim-webhooks-quick-start
 ```
 
 The first command registers this marketplace, the second installs the
-`newton` plugin, and the third launches the webhook quick-start
-workflow that scaffolds Aghanim's `player.verify`, `item.add`, and
-`item.remove` handlers in the current project. The very first
-`mcp__aghanim__*` call opens a browser for Aghanim SSO login — complete
-it once and the session persists.
+`newton` plugin, the third reloads plugins so the newly installed
+commands become available, and the fourth launches the webhook
+quick-start workflow that scaffolds Aghanim's `player.verify`,
+`item.add`, and `item.remove` handlers in the current project. The
+very first `mcp__aghanim__*` call opens a browser for Aghanim SSO
+login — complete it once and the session persists.
 
 ## Add this marketplace
 
