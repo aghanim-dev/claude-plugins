@@ -3,6 +3,10 @@
 A [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/plugins)
 containing Aghanim's plugins for Claude Code.
 
+## Documentation
+
+See the [Aghanim AI coding tools overview](https://docs.aghanim.com/ai-coding-tools/overview) for an introduction to using Aghanim with AI coding assistants.
+
 ## Quick start
 
 From inside Claude Code, run:

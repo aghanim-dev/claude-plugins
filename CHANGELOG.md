@@ -9,6 +9,12 @@ releases on the same day.
 
 ## [Unreleased]
 
+## [2026.04.30.0]
+
+### Added
+- Documentation section in the marketplace README linking to the
+  [Aghanim AI coding tools overview](https://docs.aghanim.com/ai-coding-tools/overview).
+
 ## [2026.04.24.2]
 
 ### Changed
